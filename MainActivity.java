@@ -107,7 +107,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playAgain(View view){
-
+        score = 0;
+        total = 0;
+        scoreTextView.setText("0/0");
         gameOverLinearLayout.setVisibility(View.GONE);
         gameBegin();
 
